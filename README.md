@@ -74,11 +74,3 @@ TF-IDF Vectorization (10k features, unigrams+bigrams)
      ↓
 Evaluation: Accuracy, F1, ROC, PR Curves
 ```
-
-## Interview Talking Points
-
-- **Why TF-IDF over embeddings?** — Fast, interpretable, works well for short-text classification when compute is limited. Good baseline before moving to BERT/transformers.
-- **Why lemmatization over just stemming?** — Lemmatization preserves real words (e.g., "running" → "run" not "runn"), which helps TF-IDF find meaningful patterns.
-- **Why stratified split?** — Mental health datasets are often imbalanced; stratify ensures each class is proportionally represented in train/test.
-- **Why sublinear_tf in TF-IDF?** — Dampens the effect of very frequent terms (log scaling), similar to how IDF works.
-- **What would you do next?** — Fine-tune a BERT/RoBERTa model; the TF-IDF + classical ML is a strong, interpretable baseline.
